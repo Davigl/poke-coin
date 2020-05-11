@@ -1,7 +1,7 @@
 import currencyApi from '~/services/currency-api';
 import pokemonApi from '~/services/pokemon-api';
 
-const getCurrency = async (async) => {
+const getCurrency = async () => {
   const { data } = await currencyApi.get('USD-BRL');
 
   const formatDolar = parseFloat(data.USD.ask).toFixed(2);
